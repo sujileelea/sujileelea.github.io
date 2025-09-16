@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "name": "swift",
+      "symbolSize": 0,
+      "value": "/iOS/swift/"
+    },
+    {
+      "id": "1",
+      "name": "\ud074\ub85c\uc800 (Closures)",
+      "symbolSize": 0,
+      "value": "/iOS/swift/%ED%81%B4%EB%A1%9C%EC%A0%80%20%28Closures%29/"
+    },
+    {
+      "id": "2",
+      "name": "\ud568\uc218 (Funtions)",
+      "symbolSize": 0,
+      "value": "/iOS/swift/%ED%95%A8%EC%88%98%20%28Funtions%29/"
+    },
+    {
+      "id": "3",
+      "name": "SwiftUI",
+      "symbolSize": 0,
+      "value": "/iOS/SwiftUI/"
+    },
+    {
+      "id": "4",
+      "name": "Index",
+      "symbolSize": 0,
+      "value": "/AI/python/"
+    },
+    {
+      "id": "5",
+      "name": "Index",
+      "symbolSize": 0,
+      "value": "/CS/CS50/"
+    },
+    {
+      "id": "6",
+      "name": "Index",
+      "symbolSize": 0,
+      "value": "/problem-solving/programmers/"
+    },
+    {
+      "id": "7",
+      "name": "Index",
+      "symbolSize": 0,
+      "value": "/problem-solving/baekjoon/"
+    }
+  ],
+  "links": []
+}
