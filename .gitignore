@@ -1,0 +1,22 @@
+# ----- 모두 무시 -----
+/*
+
+# ----- 꼭 포함할 것들 허용 -----
+!.gitignore
+!mkdocs.yml
+!requirements.txt
+!README.md
+!CNAME
+
+# overrides (테마 오버라이드)
+!overrides/
+!overrides/**
+
+# docs (콘텐츠)
+!docs/
+!docs/**
+
+# GitHub Actions
+!.github/
+!.github/workflows/**
+

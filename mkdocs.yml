@@ -1,0 +1,60 @@
+site_name: Log by Lea
+site_description: "Log by Lea"
+site_url: "https://sujileelea.github.io"
+
+repo_url: "https://github.com/sujileelea/sujileelea.github.io"
+repo_name: "sujileelea.github.io"
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ko
+  custom_dir: overrides
+  features:
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+  favicon: assets/purple_rose.png
+  font:
+    text: Pretendard
+    code: JetBrains Mono   # 코드 블럭용 (원하는 글꼴로 교체 가능)
+  palette:
+    - scheme: default
+      primary: custom         # 커스텀 색을 CSS 변수로 지정
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+
+extra_css:
+  - styles/custom.css
+
+plugins:
+  - search                      # 기본 검색 (로컬 빌드/Pages 둘 다 OK)
+  - awesome-pages               # 폴더 구조 그대로 네비게이션
+  - roamlinks:                  # [[위키링크]]/상대링크 자동 변환
+  - obsidian-support:           # Obsidian callout/태그/임베드 호환
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true

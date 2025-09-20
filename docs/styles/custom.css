@@ -1,0 +1,89 @@
+/* ───────────────────────────────
+   브랜드 컬러 정의 (라이트/다크 공통)
+   ─────────────────────────────── */
+:root {
+  --md-primary-fg-color: #9F4782;
+  --md-primary-fg-color--light: #b7669c;
+  --md-primary-fg-color--dark:  #7f3768;
+  --md-accent-fg-color: #9F4782;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #9F4782;
+  --md-primary-fg-color--light: #c27aad;
+  --md-primary-fg-color--dark:  #7f3768;
+  --md-accent-fg-color: #d48cc1;
+}
+
+/* ───────────────────────────────
+   로고 크기 (라이트/다크 공통)
+   ─────────────────────────────── */
+.md-header__button.md-logo img {
+  height: 42px;
+  width: auto;
+}
+
+/* ───────────────────────────────
+   라이트 모드 전용 헤더 커스터마이즈
+   ─────────────────────────────── */
+[data-md-color-scheme="default"] .md-header {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: saturate(120%) blur(6px);
+  -webkit-backdrop-filter: saturate(120%) blur(6px);
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.06);
+}
+
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-header *,
+[data-md-color-scheme="default"] .md-header a,
+[data-md-color-scheme="default"] .md-header .md-ellipsis,
+[data-md-color-scheme="default"] .md-header .md-icon,
+[data-md-color-scheme="default"] .md-header .md-icon svg {
+  color: #111 !important;
+  fill: #111 !important;
+}
+
+
+/* 검색창 (라이트 전용) */
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  color: #111 !important;
+}
+[data-md-color-scheme="default"] .md-search__input:focus {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  outline: none !important;
+}
+[data-md-color-scheme="default"] .md-search__input::placeholder {
+  color: rgba(17, 17, 17, 0.6) !important;
+}
+
+/* ───────────────────────────────
+   다크 모드: 기본 Material 스타일 유지
+   ─────────────────────────────── */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: saturate(120%) blur(8px);
+  -webkit-backdrop-filter: saturate(120%) blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lbl-side-hero img {
+  display: block;
+  width: 50%;      /* 원래 100% → 50% */
+  height: auto;
+  margin: 0 auto;  /* 가운데 정렬 */
+  margin-bottom: 42px; /* 👈 이미지 아래 간격 */
+
+}
+
+
+/* 다크 모드 보정 (선택) */
+[data-md-color-scheme="slate"] .lbl-side-hero img{
+  filter:brightness(1.05) contrast(1.05);
+}
+
+/* 사이드바 검색창 숨기기 */
+.md-sidebar__inner .md-search { display: none !important; }
+/* 헤더 로고 숨기기 */
+.md-header__button.md-logo { display: none !important; }
+

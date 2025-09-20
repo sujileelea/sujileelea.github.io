@@ -1,0 +1,9 @@
+mkdocs-material
+mkdocs-awesome-pages-plugin
+mkdocs-roamlinks-plugin
+mkdocs-callouts
+mkdocs-obsidian-support-plugin
+mkdocs-obsidian-interactive-graph-plugin
+mkdocs
+pymdown-extensions==10.8
+

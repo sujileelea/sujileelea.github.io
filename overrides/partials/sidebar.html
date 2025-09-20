@@ -1,0 +1,32 @@
+{# 좌측 네비게이터 상단에 배너 추가 (클릭 시 홈) #}
+{% set home_url = (nav.homepage.url | url) if nav and nav.homepage else "/" %}
+
+<aside class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+
+      <!-- 배너 카드 -->
+      <a class="lbl-side-hero" href="{{ home_url }}" aria-label="Go to Home">
+        <img src="{{ 'assets/purple_rose.png' | url }}" alt="Log by Lea" />
+      </a>
+
+      <!-- (옵션) 사이드바 검색 유지 -->
+      {% if "material/search" in config.plugins or "search" in config.plugins %}
+        {% include "partials/search.html" %}
+      {% endif %}
+
+      <!-- 기본 네비게이션 트리 -->
+      {% include "partials/nav.html" %}
+    </div>
+  </div>
+</aside>
+
+{# 오른쪽(보조) 사이드바(TOC)는 그대로 둠 #}
+<aside class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      {% include "partials/toc.html" %}
+    </div>
+  </div>
+</aside>
+
